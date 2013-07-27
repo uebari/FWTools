@@ -1,0 +1,70 @@
+  FWGShop.MainWindow.resources - Embedded, ContainedInManifestFile, 
+  FWGShop.icons.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly FWGShop, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Category: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Byte[] name : Public
+    Int32 sub_cats_count : Public
+    Byte[][] sub_cats : Public
+Class SaleOption: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 price : Public
+    UInt32 expire_date : Public
+    UInt32 duration : Public
+    UInt32 start_date : Public
+    Int32 control_type : Public
+    UInt32 day : Public
+    UInt32 status : Public
+    UInt32 flags : Public
+Class Hex: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 hex1 : Public
+    Int32 hex2 : Public
+    Int32 hex3 : Public
+    Int32 hex4 : Public
+Class Item: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean activate : Public
+    Int32 shop_id : Public
+    Int32 cat_index : Public
+    Int32 sub_cat_index : Public
+    Byte[] surface_path : Public
+    Int32 item_id : Public
+    Int32 item_amount : Public
+    SaleOption[] sale_options : Public
+    Byte[] description : Public
+    Byte[] name : Public
+    Int32 gift_id : Public
+    Int32 gift_amount : Public
+    Int32 gift_duration : Public
+    Int32 log_price : Public
+    Int32 price : Public
+Class Boutique: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 timestamp : Public
+    Int32 item_count : Public
+    Item[] items : Public
+    Category[] categories : Public
+    Hex[] hex : Public
+Class MainWindow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
